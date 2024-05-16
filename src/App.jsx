@@ -79,7 +79,7 @@ const App = () => {
   };
 
   const handleDelete = (id) => {
-    alert(id)
+ 
     const delTodo = todos.filter((to) => to.id !== id);
     setTodos([...delTodo]);
   };
@@ -91,7 +91,7 @@ const App = () => {
 
 
   const handleEdit = (id) => {
-    alert("status add")
+ 
     const editTodo = todos.find((i) => i.id === id);
     setTodo(editTodo.title);
     setTodoDesc(editTodo.description);
